@@ -5,11 +5,8 @@ import 'package:flutter_resume_website/Model/Method.dart';
 import 'package:flutter_resume_website/UI/About.dart';
 import 'package:flutter_resume_website/UI/FeatureProject.dart';
 import 'package:flutter_resume_website/UI/Work.dart';
-import 'package:flutter_resume_website/Widget/AppBarTitle.dart';
 import 'package:flutter_resume_website/Widget/CustomText.dart';
 import 'package:flutter_resume_website/Widget/MainTiitle.dart';
-import 'package:flutter_resume_website/Widget/OSImages.dart';
-import 'package:scroll_to_index/scroll_to_index.dart';
 import 'package:flutter_resume_website/Data/Contents.dart';
 
 class HomePage extends StatefulWidget {
@@ -65,6 +62,7 @@ class _HomePageState extends State<HomePage> {
           scrollDirection: Axis.vertical,
           child: Column(
             children: [
+              SizedBox(height: 50),
               Row(
                 children: [
                   //Social Icon
