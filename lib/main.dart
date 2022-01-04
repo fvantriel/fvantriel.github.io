@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Abdul Momen',
+      title: 'Florian van Triel',
       theme: ThemeData(pageTransitionsTheme: NoTransitionsOnWeb()),
       debugShowCheckedModeBanner: false,
       home: Home(),
