@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_resume_website/Widget/CustomText.dart';
 
-class MainTiitle extends StatelessWidget {
+class MainTitle extends StatelessWidget {
   final String number, text;
-  MainTiitle({this.number, this.text});
+  MainTitle({this.number, this.text});
   @override
   Widget build(BuildContext context) {
     return Row(

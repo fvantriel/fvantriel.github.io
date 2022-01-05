@@ -32,6 +32,7 @@ dependencies:
   url_launcher: ^5.5.0
   font_awesome_flutter: ^8.8.1
   scroll_to_index:
+  animated_text_kit: ^4.2.1
 
 dev_dependencies:
   flutter_test:

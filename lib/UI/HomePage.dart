@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:flutter_resume_website/Data/ProjectList.dart';
 import 'package:flutter_resume_website/Model/Method.dart';
 import 'package:flutter_resume_website/UI/About.dart';
-import 'package:flutter_resume_website/UI/FeatureProject.dart';
 import 'package:flutter_resume_website/UI/Work.dart';
 import 'package:flutter_resume_website/Widget/CustomText.dart';
-import 'package:flutter_resume_website/Widget/MainTiitle.dart';
 import 'package:flutter_resume_website/Data/Contents.dart';
+import 'package:animated_text_kit/animated_text_kit.dart';
+import 'package:flutter_resume_website/UI/Education.dart';
+import 'package:flutter_resume_website/UI/Patents.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -20,35 +20,6 @@ class _HomePageState extends State<HomePage> {
   @override
   void initState() {
     super.initState();
-  }
-
-  List<FeatureProject> populateFeatureProjects(String projectList) {
-    List<FeatureProject> listOfFeatureProjects = [];
-    List<Map> projectContentList = [];
-    var project;
-
-    //projectList1 is the first list of projects before the screenshots of various apps and projectList2 is the second list that comes right after
-    if (projectList == "ProjectList1") {
-      projectContentList = getProjectList1();
-    } else if (projectList == "ProjectList2") {
-      projectContentList = getProjectList2();
-    }
-
-    if (projectContentList.length > 0) {
-      for (var i = 0; i < projectContentList.length; i++) {
-        project = FeatureProject(
-          imagePath: projectContentList[i]['imagePath'],
-          linkURL: projectContentList[i]['linkURL'],
-          projectDesc: projectContentList[i]['projectDesc'],
-          projectTitle: projectContentList[i]['projectTitle'],
-          tech1: projectContentList[i]['tech1'],
-          tech2: projectContentList[i]['tech2'],
-          tech3: projectContentList[i]['tech3'],
-        );
-        listOfFeatureProjects.add(project);
-      }
-    }
-    return listOfFeatureProjects;
   }
 
   @override
@@ -143,11 +114,18 @@ class _HomePageState extends State<HomePage> {
                                   SizedBox(
                                     height: 6.0,
                                   ),
-                                  CustomText(
-                                    text: kName + ".",
-                                    textsize: 68.0,
-                                    color: Color(0xffCCD6F6),
-                                    fontWeight: FontWeight.w900,
+                                  AnimatedTextKit(
+                                    animatedTexts: [
+                                      TypewriterAnimatedText(
+                                        kName + ".",
+                                        textStyle: TextStyle(
+                                            fontSize: 68.0,
+                                            fontWeight: FontWeight.w900,
+                                            color: Color(0xffCCD6F6)),
+                                        speed: const Duration(milliseconds: 80),
+                                      ),
+                                    ],
+                                    totalRepeatCount: 1,
                                   ),
                                   SizedBox(
                                     height: 4.0,
@@ -164,10 +142,24 @@ class _HomePageState extends State<HomePage> {
                                   Wrap(
                                     children: [
                                       Text(
-                                        kSubHeadlineText,
+                                        kSubHeadlineText1,
                                         style: TextStyle(
                                           color: Colors.grey,
-                                          fontSize: 16.0,
+                                          fontSize: 20.0,
+                                          letterSpacing: 2.75,
+                                          wordSpacing: 0.75,
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                  SizedBox(height: 5),
+                                  Wrap(
+                                    children: [
+                                      Text(
+                                        kSubHeadlineText2,
+                                        style: TextStyle(
+                                          color: Colors.grey,
+                                          fontSize: 20.0,
                                           letterSpacing: 2.75,
                                           wordSpacing: 0.75,
                                         ),
@@ -227,29 +219,14 @@ class _HomePageState extends State<HomePage> {
                                 height: size.height * 0.10,
                               ),
 
-                              //Some Things I've Built Main Project
-                              Column(
-                                children: [
-                                  MainTiitle(
-                                    number: "0.3",
-                                    text: "Some Things I've Built",
-                                  ),
-                                  SizedBox(
-                                    height: size.height * 0.04,
-                                  ),
-                                  // ...populateFeatureProjects("ProjectList1"), //Using spread operator (...) to insert listelements into list without creating a nested list
-
-                                  SizedBox(
-                                    height: size.height * 0.04,
-                                  ),
-
-                                  //...populateFeatureProjects("ProjectList2"), //Using spread operator (...) to insert listelements into list without creating a nested list
-                                ],
-                              ),
+                              //Academic Background
+                              Education(size: size),
 
                               SizedBox(
                                 height: 6.0,
                               ),
+                              //Academic Background
+                              Patents(size: size),
 
                               //Get In Touch
                               Column(
@@ -264,7 +241,7 @@ class _HomePageState extends State<HomePage> {
                                           MainAxisAlignment.center,
                                       children: [
                                         CustomText(
-                                          text: "0.4 What's Next?",
+                                          text: "0.5 What's Next?",
                                           textsize: 16.0,
                                           color: Color(0xff41FBDA),
                                           letterSpacing: 3.0,

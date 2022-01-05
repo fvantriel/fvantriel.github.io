@@ -118,7 +118,7 @@ class _MobileHomeState extends State<MobileHome> {
                 child: Wrap(
                   children: [
                     Text(
-                      kSubHeadlineText,
+                      kSubHeadlineText1,
                       style: TextStyle(
                         color: Colors.grey,
                         fontSize: 15.0,
