@@ -208,7 +208,7 @@ class _HomePageState extends State<HomePage> {
                                 ],
                               ),
                               //About Me
-                              //About(), //TODO: Rework about me page
+                              About(), //TODO: Rework about me page
                               SizedBox(
                                 height: size.height * 0.02,
                               ),
