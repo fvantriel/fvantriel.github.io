@@ -8,6 +8,7 @@ import 'package:flutter_resume_website/Data/Contents.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter_resume_website/UI/Education.dart';
 import 'package:flutter_resume_website/UI/Patents.dart';
+import 'package:flutter_resume_website/UI/GetInTouch.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -50,13 +51,13 @@ class _HomePageState extends State<HomePage> {
                             onPressed: () {
                               method.launchURL(kGithubURL);
                             }),
-                        IconButton(
-                            icon: FaIcon(FontAwesomeIcons.twitter),
-                            color: Color(0xffffA8B2D1),
-                            iconSize: 16.0,
-                            onPressed: () {
-                              method.launchURL(kTwitterURL);
-                            }),
+                        // IconButton(
+                        //     icon: FaIcon(FontAwesomeIcons.twitter),
+                        //     color: Color(0xffffA8B2D1),
+                        //     iconSize: 16.0,
+                        //     onPressed: () {
+                        //       method.launchURL(kTwitterURL);
+                        //     }),
                         IconButton(
                           icon: FaIcon(FontAwesomeIcons.linkedin),
                           color: Color(0xffffA8B2D1),
@@ -65,20 +66,20 @@ class _HomePageState extends State<HomePage> {
                           },
                           iconSize: 16.0,
                         ),
-                        IconButton(
-                            icon: Icon(Icons.call),
-                            color: Color(0xffffA8B2D1),
-                            iconSize: 16.0,
-                            onPressed: () {
-                              method.launchCaller();
-                            }),
-                        IconButton(
-                            icon: Icon(Icons.mail),
-                            color: Color(0xffffA8B2D1),
-                            iconSize: 16.0,
-                            onPressed: () {
-                              method.launchEmail();
-                            }),
+                        // IconButton(
+                        //     icon: Icon(Icons.call),
+                        //     color: Color(0xffffA8B2D1),
+                        //     iconSize: 16.0,
+                        //     onPressed: () {
+                        //       method.launchCaller();
+                        //     }),
+                        // IconButton(
+                        //     icon: Icon(Icons.mail),
+                        //     color: Color(0xffffA8B2D1),
+                        //     iconSize: 16.0,
+                        //     onPressed: () {
+                        //       method.launchEmail();
+                        //     }),
                         Padding(
                           padding: const EdgeInsets.only(top: 16.0),
                           child: Container(
@@ -206,135 +207,33 @@ class _HomePageState extends State<HomePage> {
                                   ),
                                 ],
                               ),
-
-                              //About M
-                              About(),
+                              //About Me
+                              //About(), //TODO: Rework about me page
                               SizedBox(
                                 height: size.height * 0.02,
                               ),
 
                               //Where I've Worked
-                              Work(),
+                              //TODO: Rework professional experience page
+                              //Work(),
                               SizedBox(
                                 height: size.height * 0.10,
                               ),
 
                               //Academic Background
-                              Education(size: size),
+                              //TODO: Rework education page
+                              //Education(size: size),
 
                               SizedBox(
                                 height: 6.0,
                               ),
                               //Academic Background
-                              Patents(size: size),
+                              //TODO: Rework patent page
+                              //Patents(size: size),
 
                               //Get In Touch
-                              Column(
-                                children: [
-                                  Container(
-                                    height: size.height * 0.68,
-                                    width:
-                                        MediaQuery.of(context).size.width - 100,
-                                    // color: Colors.orange,
-                                    child: Column(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
-                                      children: [
-                                        CustomText(
-                                          text: "0.5 What's Next?",
-                                          textsize: 16.0,
-                                          color: Color(0xff41FBDA),
-                                          letterSpacing: 3.0,
-                                        ),
-                                        SizedBox(
-                                          height: 16.0,
-                                        ),
-                                        CustomText(
-                                          text: "Get In Touch",
-                                          textsize: 42.0,
-                                          color: Colors.white,
-                                          letterSpacing: 3.0,
-                                          fontWeight: FontWeight.w700,
-                                        ),
-                                        SizedBox(
-                                          height: 16.0,
-                                        ),
-                                        Wrap(
-                                          children: [
-                                            Text(
-                                              kFinalText,
-                                              textAlign: TextAlign.center,
-                                              style: TextStyle(
-                                                color: Colors.white
-                                                    .withOpacity(0.4),
-                                                letterSpacing: 0.75,
-                                                fontSize: 17.0,
-                                              ),
-                                            ),
-                                          ],
-                                        ),
-                                        SizedBox(
-                                          height: 32.0,
-                                        ),
-                                        InkWell(
-                                          onTap: () {
-                                            method.launchEmail();
-                                          },
-                                          child: Card(
-                                            elevation: 4.0,
-                                            color: Color(0xff64FFDA),
-                                            shape: RoundedRectangleBorder(
-                                              borderRadius:
-                                                  BorderRadius.circular(6.0),
-                                            ),
-                                            child: Container(
-                                              margin: EdgeInsets.all(0.85),
-                                              height: size.height * 0.09,
-                                              width: size.width * 0.10,
-                                              alignment: Alignment.center,
-                                              decoration: BoxDecoration(
-                                                color: Color(0xff0A192F),
-                                                borderRadius:
-                                                    BorderRadius.circular(6.0),
-                                              ),
-                                              child: Padding(
-                                                padding:
-                                                    const EdgeInsets.symmetric(
-                                                  horizontal: 8.0,
-                                                ),
-                                                child: Text(
-                                                  "Say Hello",
-                                                  style: TextStyle(
-                                                    color: Color(0xff64FFDA),
-                                                  ),
-                                                ),
-                                              ),
-                                            ),
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-
-                                  //Footer
-                                  Container(
-                                    alignment: Alignment.center,
-                                    height:
-                                        MediaQuery.of(context).size.height / 6,
-                                    width:
-                                        MediaQuery.of(context).size.width - 100,
-                                    //color: Colors.white,
-                                    child: Text(
-                                      "Designed & Built by Tushar Nikam 💙 Flutter",
-                                      style: TextStyle(
-                                        color: Colors.white.withOpacity(0.4),
-                                        letterSpacing: 1.75,
-                                        fontSize: 14.0,
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
+                              //TODO: Rework GetInTouch Page
+                              //GetInTouch(size: size, method: method),
                             ])),
                           ],
                         ),
