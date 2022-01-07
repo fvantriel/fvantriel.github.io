@@ -14,6 +14,11 @@ class MobileHome extends StatefulWidget {
 
 class _MobileHomeState extends State<MobileHome> {
   Widget technology(BuildContext context, String text) {
+    String technologyText = "";
+    if (text != null) {
+      technologyText = text;
+    }
+
     return Row(
       children: [
         Icon(
@@ -25,7 +30,7 @@ class _MobileHomeState extends State<MobileHome> {
           width: MediaQuery.of(context).size.width * 0.04,
         ),
         Text(
-          text,
+          technologyText,
           style: TextStyle(
             color: Color(0xff717C99),
             letterSpacing: 1.75,
