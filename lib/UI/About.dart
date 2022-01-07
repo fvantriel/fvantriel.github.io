@@ -75,20 +75,20 @@ class About extends StatelessWidget {
                   children: [
                     CustomText(
                       text:
-                          "Hi! I am Florian, an engineer based in Munich, Germany.\n\nI am passionate about the latest technology and aim to build products with focus on the users.\nIn my current role I am responsible for security functionalities of central vehicle components and functions of all vehicles that BMW, Mini and Rolls Royce put on the road.\nFurthermore, I am the go-to person regarding information protection and secure data handling at my department.\n\n",
+                          "Hi! I am Florian, an engineer based in Munich, Germany.\n\nI am passionate about the latest technology and aim to build products with focus on the users. In my current role I am responsible for security functionalities of central vehicle components and functions of all BMW, Mini and Rolls Royce vehicles on the road.\nAdditionally, I am the go-to person regarding information protection and secure data handling in my department.\n\n",
                       textsize: 16.0,
                       color: Color(0xff828DAA),
                       letterSpacing: 0.75,
                     ),
                     CustomText(
                       text:
-                          "I have a master's degree in engineeringfrom the Technical University of Dresden and wrote my thesis in a collaborative research project with the University of California at Berkeley.\n\n",
+                          "I have a master's degree in engineering from the Technical University of Dresden and wrote my thesis in a collaborative research project with the University of California at Berkeley.\n\n",
                       textsize: 16.0,
                       color: Color(0xff828DAA),
                     ),
                     CustomText(
                       text:
-                          "Here are a few technologies I've been working with recently:\n\n",
+                          "Here are a few technologies I have been working with so far:\n\n",
                       textsize: 16.0,
                       color: Color(0xff828DAA),
                       // fontWeight: FontWeight.w500,

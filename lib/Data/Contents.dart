@@ -9,12 +9,10 @@ const String kSubHeadlineText2 =
 
 const String kFinalText = "";
 const String kResumeLink =
-    "https://drive.google.com/file/d/1kaIZXxoDWoWcGVHC7crxrmDtvki-q93u/view?usp=sharing";
+    "https://drive.google.com/file/d/1MB01KVoBlG1JTlFaandEyc6ZfRBiWETi/view?usp=sharing";
 
 const String kMailAddress = "florian.vantriel@gmail.com";
 const String kPhoneNumber = "";
-const String kResumeURL =
-    "https://drive.google.com/file/d/1yHLcrN5pCUGIeT8SrwC2L95Lv0MVbJpx/view?usp=sharing";
 const String kGithubURL = "https://github.com/fvantriel";
 const String kTwitterURL = "";
 const String kLinkedInURL = "https://www.linkedin.com/in/fvantriel/";

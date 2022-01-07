@@ -307,7 +307,7 @@ class _MobileHomeState extends State<MobileHome> {
                         width: size.width * 0.6,
                         child: Image(
                           fit: BoxFit.cover,
-                          image: AssetImage("assets/images/pic1.jpeg"),
+                          image: AssetImage("assets/images/fvan.jpeg"),
                         ),
                       ),
                       Container(
@@ -392,7 +392,7 @@ class _MobileHomeState extends State<MobileHome> {
 
               MobileProject(
                 ontab: () {},
-                image: "assets/images/pic9.jpg",
+                image: "assets/images/fvan.jpg",
               ),
 
               SizedBox(
@@ -401,50 +401,11 @@ class _MobileHomeState extends State<MobileHome> {
 
               MobileProject(
                 ontab: () {},
-                image: "assets/images/pic2.jpg",
-              ),
-              Row(
-                children: [
-                  Container(
-                    width: size.width * 0.42,
-                    height: size.height * 0.6,
-                    child: Image(
-                      image: AssetImage("assets/images/pic101.png"),
-                    ),
-                  ),
-                  Spacer(),
-                  Container(
-                    width: size.width * 0.42,
-                    height: size.height * 0.6,
-                    child: Image(
-                      image: AssetImage("assets/images/pic103.png"),
-                    ),
-                  ),
-                ],
+                image: "assets/images/fvan.jpeg",
               ),
 
               SizedBox(
                 height: size.height * 0.07,
-              ),
-
-              Row(
-                children: [
-                  Container(
-                    width: size.width * 0.44,
-                    height: size.height * 0.6,
-                    child: Image(
-                      image: AssetImage("assets/images/pic111.gif"),
-                    ),
-                  ),
-                  Spacer(),
-                  Container(
-                    width: size.width * 0.44,
-                    height: size.height * 0.6,
-                    child: Image(
-                      image: AssetImage("assets/images/pic113.jfif"),
-                    ),
-                  ),
-                ],
               ),
 
               FittedBox(
