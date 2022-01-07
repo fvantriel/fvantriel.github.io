@@ -4,13 +4,16 @@ import 'Model/WebPageTransitionDisabler.dart';
 import 'package:flutter_resume_website/firebase_options.dart';
 import 'package:firebase_core/firebase_core.dart';
 
+//Run application with firebase services connected
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
+
   runApp(MyApp());
 }
+
 //
 // void main() {
 //   runApp(MyApp());

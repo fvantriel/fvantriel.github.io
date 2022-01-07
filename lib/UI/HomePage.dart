@@ -172,34 +172,70 @@ class _HomePageState extends State<HomePage> {
                                   ),
 
                                   //get in touch text
-                                  InkWell(
-                                    onTap: () {
-                                      method.launchEmail();
-                                    },
-                                    hoverColor:
-                                        Color(0xff64FFDA).withOpacity(0.2),
-                                    borderRadius: BorderRadius.circular(4.0),
-                                    child: Container(
-                                      alignment: Alignment.center,
-                                      height: size.height * 0.09,
-                                      width: size.width * 0.14,
-                                      decoration: BoxDecoration(
-                                        border: Border.all(
-                                          color: Color(0xff64FFDA),
-                                        ),
+                                  Row(
+                                    children: [
+                                      InkWell(
+                                        onTap: () {
+                                          method.launchEmail();
+                                        },
+                                        hoverColor:
+                                            Color(0xff64FFDA).withOpacity(0.2),
                                         borderRadius:
                                             BorderRadius.circular(4.0),
-                                      ),
-                                      child: Text(
-                                        "Get In Touch",
-                                        style: TextStyle(
-                                          color: Color(0xff64FFDA),
-                                          letterSpacing: 2.75,
-                                          wordSpacing: 1.0,
-                                          fontSize: 15.0,
+                                        child: Container(
+                                          alignment: Alignment.center,
+                                          height: size.height * 0.09,
+                                          width: size.width * 0.14,
+                                          decoration: BoxDecoration(
+                                            border: Border.all(
+                                              color: Color(0xff64FFDA),
+                                            ),
+                                            borderRadius:
+                                                BorderRadius.circular(4.0),
+                                          ),
+                                          child: Text(
+                                            "Get In Touch",
+                                            style: TextStyle(
+                                              color: Color(0xff64FFDA),
+                                              letterSpacing: 2.75,
+                                              wordSpacing: 1.0,
+                                              fontSize: 15.0,
+                                            ),
+                                          ),
                                         ),
                                       ),
-                                    ),
+                                      SizedBox(width: size.width * 0.017),
+                                      InkWell(
+                                        onTap: () {
+                                          method.launchURL(kResumeLink);
+                                        },
+                                        hoverColor:
+                                            Color(0xff64FFDA).withOpacity(0.2),
+                                        borderRadius:
+                                            BorderRadius.circular(4.0),
+                                        child: Container(
+                                          alignment: Alignment.center,
+                                          height: size.height * 0.09,
+                                          width: size.width * 0.14,
+                                          decoration: BoxDecoration(
+                                            border: Border.all(
+                                              color: Color(0xff64FFDA),
+                                            ),
+                                            borderRadius:
+                                                BorderRadius.circular(4.0),
+                                          ),
+                                          child: Text(
+                                            "Resume",
+                                            style: TextStyle(
+                                              color: Color(0xff64FFDA),
+                                              letterSpacing: 2.75,
+                                              wordSpacing: 1.0,
+                                              fontSize: 15.0,
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                    ],
                                   ),
 
                                   SizedBox(

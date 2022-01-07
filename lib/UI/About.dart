@@ -81,14 +81,8 @@ class About extends StatelessWidget {
                       letterSpacing: 0.75,
                     ),
                     CustomText(
-                      text: "\n\n",
-                      textsize: 16.0,
-                      color: Color(0xff828DAA),
-                      letterSpacing: 0.75,
-                    ),
-                    CustomText(
                       text:
-                          "I have a master's degree from the Technical University of Dresden and wrote my thesis in a collaborative research project with the University of California at Berkeley.\n\n",
+                          "I have a master's degree in engineeringfrom the Technical University of Dresden and wrote my thesis in a collaborative research project with the University of California at Berkeley.\n\n",
                       textsize: 16.0,
                       color: Color(0xff828DAA),
                     ),
@@ -169,7 +163,7 @@ class About extends StatelessWidget {
                       color: Colors.black54,
                       child: Image(
                         fit: BoxFit.cover,
-                        image: AssetImage("images/fvan.jpeg"),
+                        image: AssetImage("assets/images/fvan.jpeg"),
                       ),
                     ),
                   ),

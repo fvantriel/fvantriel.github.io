@@ -19,8 +19,6 @@ class Education extends StatelessWidget {
     //projectList1 is the first list of projects before the screenshots of various apps and projectList2 is the second list that comes right after
     if (projectList == "ProjectList1") {
       projectContentList = getProjectList1();
-    } else if (projectList == "ProjectList2") {
-      projectContentList = getProjectList2();
     }
 
     if (projectContentList.length > 0) {

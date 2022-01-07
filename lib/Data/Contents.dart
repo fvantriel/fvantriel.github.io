@@ -8,6 +8,8 @@ const String kSubHeadlineText2 =
     "If you are interested in a chat, feel free to send me a mail or an invite on LinkedIn.";
 
 const String kFinalText = "";
+const String kResumeLink =
+    "https://drive.google.com/file/d/1kaIZXxoDWoWcGVHC7crxrmDtvki-q93u/view?usp=sharing";
 
 const String kMailAddress = "florian.vantriel@gmail.com";
 const String kPhoneNumber = "";
