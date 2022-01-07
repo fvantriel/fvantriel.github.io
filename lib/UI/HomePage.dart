@@ -194,7 +194,7 @@ class _HomePageState extends State<HomePage> {
                                               wordSpacing: 1.0,
                                               fontSize:
                                                   _adaptFontSizeToScreenSize(
-                                                      15, size.width),
+                                                      20, size.width),
                                             ),
                                           ),
                                         ),
@@ -227,7 +227,7 @@ class _HomePageState extends State<HomePage> {
                                               wordSpacing: 1.0,
                                               fontSize:
                                                   _adaptFontSizeToScreenSize(
-                                                      15, size.width),
+                                                      20, size.width),
                                             ),
                                           ),
                                         ),
