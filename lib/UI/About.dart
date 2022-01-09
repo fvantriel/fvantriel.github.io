@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_resume_website/Widget/CustomText.dart';
+import 'package:flutter_resume_website/Model/Method.dart';
 
 class About extends StatelessWidget {
   Widget technology(BuildContext context, String text) {
@@ -27,15 +28,16 @@ class About extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
+    Method method = Method();
     return Container(
       height: size.height,
-      width: size.width - 100,
+      width: size.width * 0.09,
       child: Row(
         children: [
           //About me
           Container(
             height: size.height * 0.9,
-            width: size.width / 2 - 100,
+            width: size.width * 0.09 / 2,
             child: Column(
               children: [
                 //About me title
@@ -44,16 +46,16 @@ class About extends StatelessWidget {
                   children: [
                     CustomText(
                       text: "01.",
-                      textsize: 20.0,
+                      textsize:
+                          method.adaptFontSizeToScreenSize(20.0, size.width),
                       color: Color(0xff61F9D5),
                       fontWeight: FontWeight.w700,
                     ),
-                    SizedBox(
-                      width: 12.0,
-                    ),
+                    SizedBox(width: 12.0),
                     CustomText(
                       text: "About Me",
-                      textsize: 26.0,
+                      textsize:
+                          method.adaptFontSizeToScreenSize(26.0, size.width),
                       color: Color(0xffCCD6F6),
                       fontWeight: FontWeight.w700,
                     ),
@@ -76,20 +78,23 @@ class About extends StatelessWidget {
                     CustomText(
                       text:
                           "Hi! I am Florian, an engineer based in Munich, Germany.\n\nI am passionate about the latest technology and aim to build products with focus on the users. In my current role I am responsible for security functionalities of central vehicle components and functions of all BMW, Mini and Rolls Royce vehicles on the road.\nAdditionally, I am the go-to person regarding information protection and secure data handling in my department.\n\n",
-                      textsize: 16.0,
+                      textsize:
+                          method.adaptFontSizeToScreenSize(16.0, size.width),
                       color: Color(0xff828DAA),
                       letterSpacing: 0.75,
                     ),
                     CustomText(
                       text:
                           "I have a master's degree in engineering from the Technical University of Dresden and wrote my thesis in a collaborative research project with the University of California at Berkeley.\n\n",
-                      textsize: 16.0,
+                      textsize:
+                          method.adaptFontSizeToScreenSize(16.0, size.width),
                       color: Color(0xff828DAA),
                     ),
                     CustomText(
                       text:
                           "Here are a few technologies I have been working with so far:\n\n",
-                      textsize: 16.0,
+                      textsize:
+                          method.adaptFontSizeToScreenSize(16.0, size.width),
                       color: Color(0xff828DAA),
                       // fontWeight: FontWeight.w500,
                       letterSpacing: 0.75,

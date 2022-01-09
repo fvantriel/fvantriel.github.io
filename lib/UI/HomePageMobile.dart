@@ -10,13 +10,14 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter_resume_website/UI/Education.dart';
 import 'package:flutter_resume_website/UI/Patents.dart';
 import 'package:flutter_resume_website/UI/GetInTouch.dart';
+import 'package:flutter_resume_website/UI/AboutMobile.dart';
 
-class HomePage extends StatefulWidget {
+class HomePageMobile extends StatefulWidget {
   @override
-  _HomePageState createState() => _HomePageState();
+  _HomePageMobileState createState() => _HomePageMobileState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _HomePageMobileState extends State<HomePageMobile> {
   Method method = Method();
 
   @override
@@ -235,7 +236,7 @@ class _HomePageState extends State<HomePage> {
                                 ],
                               ),
                               //About Me
-                              About(), //TODO: Rework about me page
+                              AboutMobile(), //TODO: Rework about me page
 
                               //Where I've Worked
                               //TODO: Rework professional experience page
