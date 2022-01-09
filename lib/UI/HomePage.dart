@@ -28,8 +28,9 @@ class _HomePageState extends State<HomePage> {
     double newFontSize = fontSize;
     double width = screenWidth;
     if (width <= 800) {
-      newFontSize = newFontSize * 0.75;
-    }
+      newFontSize = newFontSize * 0.7;
+    } else if (width > 800 && width <= 1100) newFontSize = newFontSize * 0.9;
+    print(width);
     return newFontSize;
   }
 
@@ -133,7 +134,7 @@ class _HomePageState extends State<HomePage> {
                                     style: TextStyle(
                                       color: Colors.grey,
                                       fontSize: _adaptFontSizeToScreenSize(
-                                          26, size.width),
+                                          22, size.width),
                                       letterSpacing: 2.75,
                                       wordSpacing: 0.75,
                                     ),
@@ -144,7 +145,7 @@ class _HomePageState extends State<HomePage> {
                                     style: TextStyle(
                                       color: Colors.grey,
                                       fontSize: _adaptFontSizeToScreenSize(
-                                          26, size.width),
+                                          22, size.width),
                                       letterSpacing: 2.75,
                                       wordSpacing: 0.75,
                                     ),
@@ -155,7 +156,7 @@ class _HomePageState extends State<HomePage> {
                                     style: TextStyle(
                                       color: Colors.grey,
                                       fontSize: _adaptFontSizeToScreenSize(
-                                          26, size.width),
+                                          22, size.width),
                                       letterSpacing: 2.75,
                                       wordSpacing: 0.75,
                                     ),
@@ -178,7 +179,7 @@ class _HomePageState extends State<HomePage> {
                                         child: Container(
                                           alignment: Alignment.center,
                                           height: size.height * 0.09,
-                                          width: size.width * 0.3,
+                                          width: size.width * 0.25,
                                           decoration: BoxDecoration(
                                             border: Border.all(
                                               color: Color(0xff64FFDA),
@@ -211,7 +212,7 @@ class _HomePageState extends State<HomePage> {
                                         child: Container(
                                           alignment: Alignment.center,
                                           height: size.height * 0.09,
-                                          width: size.width * 0.3,
+                                          width: size.width * 0.25,
                                           decoration: BoxDecoration(
                                             border: Border.all(
                                               color: Color(0xff64FFDA),
