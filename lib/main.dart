@@ -3,6 +3,7 @@ import 'package:flutter_resume_website/UI/Home.dart';
 import 'Model/WebPageTransitionDisabler.dart';
 import 'package:flutter_resume_website/firebase_options.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter_resume_website/Data/StyleConstants.dart';
 
 //Run application with firebase services connected
 void main() async {
@@ -24,7 +25,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Florian van Triel',
-      theme: ThemeData(pageTransitionsTheme: NoTransitionsOnWeb()),
+      theme: ThemeData(
+        pageTransitionsTheme: NoTransitionsOnWeb(),
+        backgroundColor: kBackgroundColor,
+      ),
       debugShowCheckedModeBanner: false,
       home: Home(),
     );
