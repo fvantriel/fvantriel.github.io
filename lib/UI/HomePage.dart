@@ -71,191 +71,176 @@ class _HomePageState extends State<HomePage> {
                       ],
                     ),
                   ),
-                  Expanded(
-                    child: Container(
-                      height: size.height * 0.9,
-                      child: Padding(
-                        padding:
-                            EdgeInsets.symmetric(horizontal: size.width * 0.03),
-                        child: CustomScrollView(
-                          slivers: <Widget>[
-                            SliverList(
-                                delegate: SliverChildListDelegate([
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  SizedBox(height: size.height * 0.06),
-                                  CustomText(
-                                    text: "Hi, my name is",
-                                    textsize: method.adaptFontSizeToScreenSize(
-                                        22.0, size.width),
-                                    color: Color(0xff41FBDA),
-                                    letterSpacing: 3.0,
+                  Container(
+                    height: size.height,
+                    width: size.width * 0.82,
+                    child: CustomScrollView(
+                      slivers: <Widget>[
+                        SliverList(
+                            delegate: SliverChildListDelegate([
+                          Container(
+                            height: size.height,
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                SizedBox(height: size.height * 0.2),
+                                CustomText(
+                                  text: "Hi, my name is",
+                                  textsize: method.adaptFontSizeToScreenSize(
+                                      22.0, size.width),
+                                  color: Color(0xff41FBDA),
+                                  letterSpacing: 3.0,
+                                ),
+                                SizedBox(height: size.height * 0.01),
+                                AnimatedTextKit(
+                                  animatedTexts: [
+                                    TypewriterAnimatedText(
+                                      kName + ".",
+                                      textStyle: TextStyle(
+                                          fontSize:
+                                              method.adaptFontSizeToScreenSize(
+                                                  68.0, size.width),
+                                          fontWeight: FontWeight.w900,
+                                          color: Color(0xffCCD6F6)),
+                                      speed: const Duration(milliseconds: 80),
+                                    ),
+                                  ],
+                                  totalRepeatCount: 1,
+                                ),
+                                SizedBox(height: size.height * 0.01),
+                                CustomText(
+                                  text: kHeadlineText,
+                                  textsize: method.adaptFontSizeToScreenSize(
+                                      40.0, size.width),
+                                  color: Color(0xffCCD6F6).withOpacity(0.6),
+                                  fontWeight: FontWeight.w700,
+                                ),
+                                SizedBox(height: size.height * .04),
+                                Text(
+                                  kSubHeadlineText1,
+                                  style: TextStyle(
+                                    color: Colors.grey,
+                                    fontSize: method.adaptFontSizeToScreenSize(
+                                        22, size.width),
+                                    letterSpacing: 2.75,
+                                    wordSpacing: 0.75,
                                   ),
-                                  SizedBox(height: size.height * 0.01),
-                                  AnimatedTextKit(
-                                    animatedTexts: [
-                                      TypewriterAnimatedText(
-                                        kName + ".",
-                                        textStyle: TextStyle(
+                                ),
+                                SizedBox(height: size.height * 0.015),
+                                Text(
+                                  kSubHeadlineText2,
+                                  style: TextStyle(
+                                    color: Colors.grey,
+                                    fontSize: method.adaptFontSizeToScreenSize(
+                                        22, size.width),
+                                    letterSpacing: 2.75,
+                                    wordSpacing: 0.75,
+                                  ),
+                                ),
+                                SizedBox(height: size.height * 0.015),
+                                Text(
+                                  kSubHeadlineText3,
+                                  style: TextStyle(
+                                    color: Colors.grey,
+                                    fontSize: method.adaptFontSizeToScreenSize(
+                                        22, size.width),
+                                    letterSpacing: 2.75,
+                                    wordSpacing: 0.75,
+                                  ),
+                                ),
+                                SizedBox(height: size.height * .05),
+
+                                //get in touch text
+                                Row(
+                                  children: [
+                                    InkWell(
+                                      onTap: () {
+                                        method.launchURL(kLinkedInURL);
+                                      },
+                                      hoverColor:
+                                          Color(0xff64FFDA).withOpacity(0.2),
+                                      borderRadius: BorderRadius.circular(4.0),
+                                      child: Container(
+                                        alignment: Alignment.center,
+                                        height: size.height * 0.09,
+                                        width: size.width * 0.25,
+                                        decoration: BoxDecoration(
+                                          border: Border.all(
+                                            color: Color(0xff64FFDA),
+                                          ),
+                                          borderRadius:
+                                              BorderRadius.circular(4.0),
+                                        ),
+                                        child: Text(
+                                          "Get In Touch",
+                                          style: TextStyle(
+                                            color: Color(0xff64FFDA),
+                                            letterSpacing: 2.75,
+                                            wordSpacing: 1.0,
                                             fontSize: method
                                                 .adaptFontSizeToScreenSize(
-                                                    68.0, size.width),
-                                            fontWeight: FontWeight.w900,
-                                            color: Color(0xffCCD6F6)),
-                                        speed: const Duration(milliseconds: 80),
-                                      ),
-                                    ],
-                                    totalRepeatCount: 1,
-                                  ),
-                                  SizedBox(height: size.height * 0.01),
-                                  CustomText(
-                                    text: kHeadlineText,
-                                    textsize: method.adaptFontSizeToScreenSize(
-                                        40.0, size.width),
-                                    color: Color(0xffCCD6F6).withOpacity(0.6),
-                                    fontWeight: FontWeight.w700,
-                                  ),
-                                  SizedBox(
-                                    height: size.height * .04,
-                                  ),
-                                  Text(
-                                    kSubHeadlineText1,
-                                    style: TextStyle(
-                                      color: Colors.grey,
-                                      fontSize:
-                                          method.adaptFontSizeToScreenSize(
-                                              22, size.width),
-                                      letterSpacing: 2.75,
-                                      wordSpacing: 0.75,
-                                    ),
-                                  ),
-                                  SizedBox(height: size.height * 0.015),
-                                  Text(
-                                    kSubHeadlineText2,
-                                    style: TextStyle(
-                                      color: Colors.grey,
-                                      fontSize:
-                                          method.adaptFontSizeToScreenSize(
-                                              22, size.width),
-                                      letterSpacing: 2.75,
-                                      wordSpacing: 0.75,
-                                    ),
-                                  ),
-                                  SizedBox(height: size.height * 0.015),
-                                  Text(
-                                    kSubHeadlineText3,
-                                    style: TextStyle(
-                                      color: Colors.grey,
-                                      fontSize:
-                                          method.adaptFontSizeToScreenSize(
-                                              22, size.width),
-                                      letterSpacing: 2.75,
-                                      wordSpacing: 0.75,
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    height: size.height * .05,
-                                  ),
-
-                                  //get in touch text
-                                  Row(
-                                    children: [
-                                      InkWell(
-                                        onTap: () {
-                                          method.launchURL(kLinkedInURL);
-                                        },
-                                        hoverColor:
-                                            Color(0xff64FFDA).withOpacity(0.2),
-                                        borderRadius:
-                                            BorderRadius.circular(4.0),
-                                        child: Container(
-                                          alignment: Alignment.center,
-                                          height: size.height * 0.09,
-                                          width: size.width * 0.25,
-                                          decoration: BoxDecoration(
-                                            border: Border.all(
-                                              color: Color(0xff64FFDA),
-                                            ),
-                                            borderRadius:
-                                                BorderRadius.circular(4.0),
-                                          ),
-                                          child: Text(
-                                            "Get In Touch",
-                                            style: TextStyle(
-                                              color: Color(0xff64FFDA),
-                                              letterSpacing: 2.75,
-                                              wordSpacing: 1.0,
-                                              fontSize: method
-                                                  .adaptFontSizeToScreenSize(
-                                                      20, size.width),
-                                            ),
+                                                    20, size.width),
                                           ),
                                         ),
                                       ),
-                                      SizedBox(width: size.width * 0.017),
-                                      InkWell(
-                                        onTap: () {
-                                          method.launchURL(kResumeLink);
-                                        },
-                                        hoverColor:
-                                            Color(0xff64FFDA).withOpacity(0.2),
-                                        borderRadius:
-                                            BorderRadius.circular(4.0),
-                                        child: Container(
-                                          alignment: Alignment.center,
-                                          height: size.height * 0.09,
-                                          width: size.width * 0.25,
-                                          decoration: BoxDecoration(
-                                            border: Border.all(
-                                              color: Color(0xff64FFDA),
-                                            ),
-                                            borderRadius:
-                                                BorderRadius.circular(4.0),
+                                    ),
+                                    SizedBox(width: size.width * 0.017),
+                                    InkWell(
+                                      onTap: () {
+                                        method.launchURL(kResumeLink);
+                                      },
+                                      hoverColor:
+                                          Color(0xff64FFDA).withOpacity(0.2),
+                                      borderRadius: BorderRadius.circular(4.0),
+                                      child: Container(
+                                        alignment: Alignment.center,
+                                        height: size.height * 0.09,
+                                        width: size.width * 0.25,
+                                        decoration: BoxDecoration(
+                                          border: Border.all(
+                                            color: Color(0xff64FFDA),
                                           ),
-                                          child: Text(
-                                            "Resume",
-                                            style: TextStyle(
-                                              color: Color(0xff64FFDA),
-                                              letterSpacing: 2.75,
-                                              wordSpacing: 1.0,
-                                              fontSize: method
-                                                  .adaptFontSizeToScreenSize(
-                                                      20, size.width),
-                                            ),
+                                          borderRadius:
+                                              BorderRadius.circular(4.0),
+                                        ),
+                                        child: Text(
+                                          "Resume",
+                                          style: TextStyle(
+                                            color: Color(0xff64FFDA),
+                                            letterSpacing: 2.75,
+                                            wordSpacing: 1.0,
+                                            fontSize: method
+                                                .adaptFontSizeToScreenSize(
+                                                    20, size.width),
                                           ),
                                         ),
                                       ),
-                                    ],
-                                  ),
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
+                          ),
+                          //About Me
+                          About(), //TODO: Rework about me page
 
-                                  SizedBox(
-                                    height: size.height * 0.20,
-                                  ),
-                                ],
-                              ),
-                              //About Me
-                              About(), //TODO: Rework about me page
+                          //Where I've Worked
+                          //TODO: Rework professional experience page
+                          //Work(),
 
-                              //Where I've Worked
-                              //TODO: Rework professional experience page
-                              //Work(),
+                          //Academic Background
+                          //TODO: Rework education page
+                          //Education(size: size),
 
-                              //Academic Background
-                              //TODO: Rework education page
-                              //Education(size: size),
+                          //Academic Background
+                          //TODO: Rework patent page
+                          //Patents(size: size),
 
-                              //Academic Background
-                              //TODO: Rework patent page
-                              //Patents(size: size),
-
-                              //Get In Touch
-                              //TODO: Rework GetInTouch Page
-                              //GetInTouch(size: size, method: method),
-                            ])),
-                          ],
-                        ),
-                      ),
+                          //Get In Touch
+                          //TODO: Rework GetInTouch Page
+                          //GetInTouch(size: size, method: method),
+                        ])),
+                      ],
                     ),
                   ),
                   Container(

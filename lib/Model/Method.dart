@@ -33,8 +33,9 @@ class Method {
     double width = screenWidth;
     if (width <= 800) {
       newFontSize = newFontSize * 0.7;
-    } else if (width > 800 && width <= 1100) newFontSize = newFontSize * 0.9;
-    print(width);
+    } else if (width > 800 && width <= 1100) {
+      newFontSize = newFontSize * 0.9;
+    }
     return newFontSize;
   }
 }
