@@ -52140,23 +52140,22 @@ A.pI.prototype={
 aE(){return new A.Eh(new A.qr(),B.m)}}
 A.Eh.prototype={
 b1(){this.bq()},
-P(b7,b8){var s,r,q,p,o,n,m,l,k,j,i=this,h=null,g=4284809178,f=b8.a0(t.w).f.a,e=f.a,d=e*0.09,c=f.b,b=c*0.95,a=c*0.06,a0=c*0.01,a1=c*0.2,a2=t.fQ,a3=A.bi(h,A.dM(A.c([A.b5(h,a,h),A.N2(B.cA,A.Lw(B.ky),20,new A.XN(i)),A.N2(B.cA,A.Lw(B.kz),20,new A.XO(i)),new A.es(new A.b9(0,a0,0,0),A.bi(h,h,B.k,A.au(102,158,158,158),h,h,h,a1,h,h,h,h,2),h)],a2),B.C,B.de),B.k,h,h,h,h,b,h,h,h,h,d),a4=A.b5(h,a1,h),a5=i.d,a6=a5.cq(22,e),a7=A.b5(h,a0,h),a8=A.a4_(A.c([A.a6D("Florian van Triel.",B.kr,A.ca(h,h,new A.x(4291614454),h,h,h,h,h,h,h,h,a5.cq(68,e),h,B.cE,h,h,!0,h,h,h,h,h,h,h,h))],t.uZ),1),a9=A.b5(h,a0,h),b0=a5.cq(40,e),b1=A.au(153,204,214,246),b2=A.b5(h,c*0.04,h),b3=A.dz(u.r,A.ca(h,h,B.bv,h,h,h,h,h,h,h,h,a5.cq(22,e),h,h,h,h,!0,h,2.75,h,h,h,h,h,0.75),h,h),b4=c*0.015,b5=A.b5(h,b4,h),b6=A.dz(u.y,A.ca(h,h,B.bv,h,h,h,h,h,h,h,h,a5.cq(22,e),h,h,h,h,!0,h,2.75,h,h,h,h,h,0.75),h,h)
-b4=A.b5(h,b4,h)
-s=A.dz(u.F,A.ca(h,h,B.bv,h,h,h,h,h,h,h,h,a5.cq(22,e),h,h,h,h,!0,h,2.75,h,h,h,h,h,0.75),h,h)
-r=A.b5(h,c*0.05,h)
+P(b6,b7){var s,r,q,p,o,n,m,l,k,j=this,i=null,h=4284809178,g=b7.a0(t.w).f.a,f=g.a,e=f*0.09,d=g.b,c=d*0.95,b=d*0.06,a=d*0.01,a0=d*0.2,a1=t.fQ,a2=A.bi(i,A.dM(A.c([A.b5(i,b,i),A.N2(B.cA,A.Lw(B.ky),20,new A.XN(j)),A.N2(B.cA,A.Lw(B.kz),20,new A.XO(j)),new A.es(new A.b9(0,a,0,0),A.bi(i,i,B.k,A.au(102,158,158,158),i,i,i,a0,i,i,i,i,2),i)],a1),B.C,B.de),B.k,i,i,i,i,c,i,i,i,i,e),a3=A.b5(i,a0,i),a4=j.d,a5=a4.cq(22,f),a6=A.b5(i,a,i),a7=A.a4_(A.c([A.a6D("Florian van Triel.",B.kr,A.ca(i,i,new A.x(4291614454),i,i,i,i,i,i,i,i,a4.cq(68,f),i,B.cE,i,i,!0,i,i,i,i,i,i,i,i))],t.uZ),1),a8=A.b5(i,a,i),a9=a4.cq(40,f),b0=A.au(153,204,214,246),b1=A.b5(i,d*0.04,i),b2=A.dz(u.r,A.ca(i,i,B.bv,i,i,i,i,i,i,i,i,a4.cq(22,f),i,i,i,i,!0,i,2.75,i,i,i,i,i,0.75),i,i),b3=d*0.015,b4=A.b5(i,b3,i),b5=A.dz(u.y,A.ca(i,i,B.bv,i,i,i,i,i,i,i,i,a4.cq(22,f),i,i,i,i,!0,i,2.75,i,i,i,i,i,0.75),i,i)
+b3=A.b5(i,b3,i)
+s=A.dz(u.F,A.ca(i,i,B.bv,i,i,i,i,i,i,i,i,a4.cq(22,f),i,i,i,i,!0,i,2.75,i,i,i,i,i,0.75),i,i)
+r=A.b5(i,d*0.05,i)
 q=A.au(51,100,255,218)
 p=A.iH(4)
-o=c*0.09
-n=e*0.25
-m=A.Jk(new A.x(g))
-l=A.iH(4)
-q=A.yB(!1,p,!0,A.bi(B.Q,A.dz("Get In Touch",A.ca(h,h,new A.x(g),h,h,h,h,h,h,h,h,a5.cq(20,e),h,h,h,h,!0,h,2.75,h,h,h,h,h,1),h,h),B.k,h,h,new A.dK(h,h,m,l,h,h,B.aD),h,o,h,h,h,h,n),h,!0,h,h,h,q,h,h,h,h,h,new A.XP(i),h)
-l=A.b5(h,h,e*0.017)
-m=A.au(51,100,255,218)
+o=d*0.09
+n=A.Jk(new A.x(h))
+m=A.iH(4)
+q=A.yB(!1,p,!0,A.bi(B.Q,A.dz("  Get In Touch  ",A.ca(i,i,new A.x(h),i,i,i,i,i,i,i,i,a4.cq(18,f),i,i,i,i,!0,i,2.75,i,i,i,i,i,1),i,i),B.k,i,i,new A.dK(i,i,n,m,i,i,B.aD),i,o,i,i,i,i,i),i,!0,i,i,i,q,i,i,i,i,i,new A.XP(j),i)
+m=A.b5(i,i,f*0.017)
+n=A.au(51,100,255,218)
 p=A.iH(4)
-k=A.Jk(new A.x(g))
-j=A.iH(4)
-return A.a69(B.dX,A.a6f(A.dM(A.c([A.i1(A.c([a3,A.bi(h,A.a4m(A.c([A.a6k(A.a6j(A.c([A.bi(h,A.dM(A.c([a4,new A.cP("Hi, my name is",a6,new A.x(4282514394),3,h,h),a7,a8,a9,new A.cP(u.Z,b0,b1,h,B.a1,h),b2,b3,b5,b6,b4,s,r,A.i1(A.c([q,l,A.yB(!1,p,!0,A.bi(B.Q,A.dz("Resume",A.ca(h,h,new A.x(g),h,h,h,h,h,h,h,h,a5.cq(20,e),h,h,h,h,!0,h,2.75,h,h,h,h,h,1),h,h),B.k,h,h,new A.dK(h,h,k,j,h,h,B.aD),h,o,h,h,h,h,n),h,!0,h,h,h,m,h,h,h,h,h,new A.XQ(i),h)],a2),B.C,B.af)],a2),B.cB,B.ae),B.k,h,h,h,h,c,h,h,h,h,h),new A.wi(h)],a2)))],a2)),B.k,h,h,h,h,c,h,h,h,h,e*0.82),A.bi(h,A.dM(A.c([A.b5(h,a,h),new A.rv(45,A.dz("florian.vantriel@gmail.com",A.ca(h,h,A.au(153,158,158,158),h,h,h,h,h,h,h,h,h,h,B.a1,h,h,!0,h,3,h,h,h,h,h,h),h,h),h),new A.es(new A.b9(0,a0,0,0),A.bi(h,h,B.k,A.au(102,158,158,158),h,h,h,a1,h,h,h,h,2),h)],a2),B.C,B.de),B.k,h,h,h,h,b,h,h,h,h,d)],a2),B.C,B.af)],a2),B.C,B.ae),new A.kH(h),!0,B.bb))}}
+l=A.Jk(new A.x(h))
+k=A.iH(4)
+return A.a69(B.dX,A.a6f(A.dM(A.c([A.i1(A.c([a2,A.bi(i,A.a4m(A.c([A.a6k(A.a6j(A.c([A.bi(i,A.dM(A.c([a3,new A.cP("Hi, my name is",a5,new A.x(4282514394),3,i,i),a6,a7,a8,new A.cP(u.Z,a9,b0,i,B.a1,i),b1,b2,b4,b5,b3,s,r,A.i1(A.c([q,m,A.yB(!1,p,!0,A.bi(B.Q,A.dz("   Resume   ",A.ca(i,i,new A.x(h),i,i,i,i,i,i,i,i,a4.cq(18,f),i,i,i,i,!0,i,2.75,i,i,i,i,i,1),i,i),B.k,i,i,new A.dK(i,i,l,k,i,i,B.aD),i,o,i,i,i,i,i),i,!0,i,i,i,n,i,i,i,i,i,new A.XQ(j),i)],a1),B.C,B.af)],a1),B.cB,B.ae),B.k,i,i,i,i,d,i,i,i,i,i),new A.wi(i)],a1)))],a1)),B.k,i,i,i,i,d,i,i,i,i,f*0.82),A.bi(i,A.dM(A.c([A.b5(i,b,i),new A.rv(45,A.dz("florian.vantriel@gmail.com",A.ca(i,i,A.au(153,158,158,158),i,i,i,i,i,i,i,i,i,i,B.a1,i,i,!0,i,3,i,i,i,i,i,i),i,i),i),new A.es(new A.b9(0,a,0,0),A.bi(i,i,B.k,A.au(102,158,158,158),i,i,i,a0,i,i,i,i,2),i)],a1),B.C,B.de),B.k,i,i,i,i,c,i,i,i,i,e)],a1),B.C,B.af)],a1),B.C,B.ae),new A.kH(i),!0,B.bb))}}
 A.XN.prototype={
 $0(){this.a.d.ej("https://github.com/fvantriel")},
 $S:1}
@@ -52173,23 +52172,22 @@ A.pJ.prototype={
 aE(){return new A.Eg(new A.qr(),B.m)}}
 A.Eg.prototype={
 b1(){this.bq()},
-P(b8,b9){var s,r,q,p,o,n,m,l,k,j,i=this,h=null,g=4284809178,f=b9.a0(t.w).f.a,e=f.a,d=e*0.09,c=f.b,b=c*0.95,a=c*0.06,a0=c*0.01,a1=c*0.2,a2=t.fQ,a3=A.bi(h,A.dM(A.c([A.b5(h,a,h),A.N2(B.cA,A.Lw(B.ky),20,new A.XJ(i)),A.N2(B.cA,A.Lw(B.kz),20,new A.XK(i)),new A.es(new A.b9(0,a0,0,0),A.bi(h,h,B.k,A.au(102,158,158,158),h,h,h,a1,h,h,h,h,2),h)],a2),B.C,B.de),B.k,h,h,h,h,b,h,h,h,h,d),a4=e*0.03,a5=A.b5(h,a,h),a6=i.d,a7=a6.cq(22,e),a8=A.b5(h,a0,h),a9=A.a4_(A.c([A.a6D("Florian van Triel.",B.kr,A.ca(h,h,new A.x(4291614454),h,h,h,h,h,h,h,h,a6.cq(68,e),h,B.cE,h,h,!0,h,h,h,h,h,h,h,h))],t.uZ),1),b0=A.b5(h,a0,h),b1=a6.cq(40,e),b2=A.au(153,204,214,246),b3=A.b5(h,c*0.04,h),b4=A.dz(u.r,A.ca(h,h,B.bv,h,h,h,h,h,h,h,h,a6.cq(22,e),h,h,h,h,!0,h,2.75,h,h,h,h,h,0.75),h,h),b5=c*0.015,b6=A.b5(h,b5,h),b7=A.dz(u.y,A.ca(h,h,B.bv,h,h,h,h,h,h,h,h,a6.cq(22,e),h,h,h,h,!0,h,2.75,h,h,h,h,h,0.75),h,h)
-b5=A.b5(h,b5,h)
-s=A.dz(u.F,A.ca(h,h,B.bv,h,h,h,h,h,h,h,h,a6.cq(22,e),h,h,h,h,!0,h,2.75,h,h,h,h,h,0.75),h,h)
-r=A.b5(h,c*0.05,h)
+P(b7,b8){var s,r,q,p,o,n,m,l,k,j=this,i=null,h=4284809178,g=b8.a0(t.w).f.a,f=g.a,e=f*0.09,d=g.b,c=d*0.95,b=d*0.06,a=d*0.01,a0=d*0.2,a1=t.fQ,a2=A.bi(i,A.dM(A.c([A.b5(i,b,i),A.N2(B.cA,A.Lw(B.ky),20,new A.XJ(j)),A.N2(B.cA,A.Lw(B.kz),20,new A.XK(j)),new A.es(new A.b9(0,a,0,0),A.bi(i,i,B.k,A.au(102,158,158,158),i,i,i,a0,i,i,i,i,2),i)],a1),B.C,B.de),B.k,i,i,i,i,c,i,i,i,i,e),a3=f*0.03,a4=A.b5(i,d*0.14,i),a5=j.d,a6=a5.cq(22,f),a7=A.b5(i,a,i),a8=A.a4_(A.c([A.a6D("Florian van Triel.",B.kr,A.ca(i,i,new A.x(4291614454),i,i,i,i,i,i,i,i,a5.cq(50,f),i,B.cE,i,i,!0,i,i,i,i,i,i,i,i))],t.uZ),1),a9=A.b5(i,a,i),b0=a5.cq(40,f),b1=A.au(153,204,214,246),b2=A.b5(i,d*0.04,i),b3=A.dz(u.r,A.ca(i,i,B.bv,i,i,i,i,i,i,i,i,a5.cq(22,f),i,i,i,i,!0,i,2.75,i,i,i,i,i,0.75),i,i),b4=d*0.015,b5=A.b5(i,b4,i),b6=A.dz(u.y,A.ca(i,i,B.bv,i,i,i,i,i,i,i,i,a5.cq(22,f),i,i,i,i,!0,i,2.75,i,i,i,i,i,0.75),i,i)
+b4=A.b5(i,b4,i)
+s=A.dz(u.F,A.ca(i,i,B.bv,i,i,i,i,i,i,i,i,a5.cq(22,f),i,i,i,i,!0,i,2.75,i,i,i,i,i,0.75),i,i)
+r=A.b5(i,d*0.05,i)
 q=A.au(51,100,255,218)
 p=A.iH(4)
-o=c*0.09
-n=e*0.25
-m=A.Jk(new A.x(g))
-l=A.iH(4)
-q=A.yB(!1,p,!0,A.bi(B.Q,A.dz("Get In Touch",A.ca(h,h,new A.x(g),h,h,h,h,h,h,h,h,a6.cq(20,e),h,h,h,h,!0,h,2.75,h,h,h,h,h,1),h,h),B.k,h,h,new A.dK(h,h,m,l,h,h,B.aD),h,o,h,h,h,h,n),h,!0,h,h,h,q,h,h,h,h,h,new A.XL(i),h)
-l=A.b5(h,h,e*0.017)
-m=A.au(51,100,255,218)
+o=d*0.08
+n=A.Jk(new A.x(h))
+m=A.iH(4)
+q=A.yB(!1,p,!0,A.bi(B.Q,A.dz(" Get In Touch ",A.ca(i,i,new A.x(h),i,i,i,i,i,i,i,i,a5.cq(20,f),i,i,i,i,!0,i,2.75,i,i,i,i,i,1),i,i),B.k,i,i,new A.dK(i,i,n,m,i,i,B.aD),i,o,i,i,i,i,i),i,!0,i,i,i,q,i,i,i,i,i,new A.XL(j),i)
+m=A.b5(i,i,f*0.017)
+n=A.au(51,100,255,218)
 p=A.iH(4)
-k=A.Jk(new A.x(g))
-j=A.iH(4)
-return A.a69(B.dX,A.a6f(A.dM(A.c([A.i1(A.c([a3,new A.xU(1,B.ks,A.bi(h,new A.es(new A.b9(a4,0,a4,0),A.a4m(A.c([A.a6k(A.a6j(A.c([A.dM(A.c([a5,new A.cP("Hi, my name is",a7,new A.x(4282514394),3,h,h),a8,a9,b0,new A.cP(u.Z,b1,b2,h,B.a1,h),b3,b4,b6,b7,b5,s,r,A.i1(A.c([q,l,A.yB(!1,p,!0,A.bi(B.Q,A.dz("Resume",A.ca(h,h,new A.x(g),h,h,h,h,h,h,h,h,a6.cq(20,e),h,h,h,h,!0,h,2.75,h,h,h,h,h,1),h,h),B.k,h,h,new A.dK(h,h,k,j,h,h,B.aD),h,o,h,h,h,h,n),h,!0,h,h,h,m,h,h,h,h,h,new A.XM(i),h)],a2),B.C,B.af),A.b5(h,a1,h)],a2),B.cB,B.ae),new A.wj(h)],a2)))],a2)),h),B.k,h,h,h,h,c*0.9,h,h,h,h,h),h),A.bi(h,A.dM(A.c([A.b5(h,a,h),new A.rv(45,A.dz("florian.vantriel@gmail.com",A.ca(h,h,A.au(153,158,158,158),h,h,h,h,h,h,h,h,h,h,B.a1,h,h,!0,h,3,h,h,h,h,h,h),h,h),h),new A.es(new A.b9(0,a0,0,0),A.bi(h,h,B.k,A.au(102,158,158,158),h,h,h,a1,h,h,h,h,2),h)],a2),B.C,B.de),B.k,h,h,h,h,b,h,h,h,h,d)],a2),B.C,B.af)],a2),B.C,B.ae),new A.kH(h),!0,B.bb))}}
+l=A.Jk(new A.x(h))
+k=A.iH(4)
+return A.a69(B.dX,A.a6f(A.dM(A.c([A.i1(A.c([a2,new A.xU(1,B.ks,A.bi(i,new A.es(new A.b9(a3,0,a3,0),A.a4m(A.c([A.a6k(A.a6j(A.c([A.dM(A.c([a4,new A.cP("Hi, my name is",a6,new A.x(4282514394),3,i,i),a7,a8,a9,new A.cP(u.Z,b0,b1,i,B.a1,i),b2,b3,b5,b6,b4,s,r,A.i1(A.c([q,m,A.yB(!1,p,!0,A.bi(B.Q,A.dz("  Resume  ",A.ca(i,i,new A.x(h),i,i,i,i,i,i,i,i,a5.cq(20,f),i,i,i,i,!0,i,2.75,i,i,i,i,i,1),i,i),B.k,i,i,new A.dK(i,i,l,k,i,i,B.aD),i,o,i,i,i,i,i),i,!0,i,i,i,n,i,i,i,i,i,new A.XM(j),i)],a1),B.C,B.af),A.b5(i,a0,i)],a1),B.cB,B.ae),new A.wj(i)],a1)))],a1)),i),B.k,i,i,i,i,d*0.9,i,i,i,i,i),i),A.bi(i,A.dM(A.c([A.b5(i,b,i),new A.rv(45,A.dz("florian.vantriel@gmail.com",A.ca(i,i,A.au(153,158,158,158),i,i,i,i,i,i,i,i,i,i,B.a1,i,i,!0,i,3,i,i,i,i,i,i),i,i),i),new A.es(new A.b9(0,a,0,0),A.bi(i,i,B.k,A.au(102,158,158,158),i,i,i,a0,i,i,i,i,2),i)],a1),B.C,B.de),B.k,i,i,i,i,c,i,i,i,i,e)],a1),B.C,B.af)],a1),B.C,B.ae),new A.kH(i),!0,B.bb))}}
 A.XJ.prototype={
 $0(){this.a.d.ej("https://github.com/fvantriel")},
 $S:1}
