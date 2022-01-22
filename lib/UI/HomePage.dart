@@ -163,7 +163,7 @@ class _HomePageState extends State<HomePage> {
                                       child: Container(
                                         alignment: Alignment.center,
                                         height: size.height * 0.09,
-                                        width: size.width * 0.25,
+                                        // width: size.width * 0.25,
                                         decoration: BoxDecoration(
                                           border: Border.all(
                                             color: Color(0xff64FFDA),
@@ -172,14 +172,14 @@ class _HomePageState extends State<HomePage> {
                                               BorderRadius.circular(4.0),
                                         ),
                                         child: Text(
-                                          "Get In Touch",
+                                          "  Get In Touch  ",
                                           style: TextStyle(
                                             color: Color(0xff64FFDA),
                                             letterSpacing: 2.75,
                                             wordSpacing: 1.0,
                                             fontSize: method
                                                 .adaptFontSizeToScreenSize(
-                                                    20, size.width),
+                                                    18, size.width),
                                           ),
                                         ),
                                       ),
@@ -195,7 +195,7 @@ class _HomePageState extends State<HomePage> {
                                       child: Container(
                                         alignment: Alignment.center,
                                         height: size.height * 0.09,
-                                        width: size.width * 0.25,
+                                        // width: size.width * 0.25,
                                         decoration: BoxDecoration(
                                           border: Border.all(
                                             color: Color(0xff64FFDA),
@@ -204,14 +204,14 @@ class _HomePageState extends State<HomePage> {
                                               BorderRadius.circular(4.0),
                                         ),
                                         child: Text(
-                                          "Resume",
+                                          "   Resume   ",
                                           style: TextStyle(
                                             color: Color(0xff64FFDA),
                                             letterSpacing: 2.75,
                                             wordSpacing: 1.0,
                                             fontSize: method
                                                 .adaptFontSizeToScreenSize(
-                                                    20, size.width),
+                                                    18, size.width),
                                           ),
                                         ),
                                       ),

@@ -85,7 +85,7 @@ class _HomePageMobileState extends State<HomePageMobile> {
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  SizedBox(height: size.height * 0.06),
+                                  SizedBox(height: size.height * 0.14),
                                   CustomText(
                                     text: "Hi, my name is",
                                     textsize: method.adaptFontSizeToScreenSize(
@@ -101,7 +101,7 @@ class _HomePageMobileState extends State<HomePageMobile> {
                                         textStyle: TextStyle(
                                             fontSize: method
                                                 .adaptFontSizeToScreenSize(
-                                                    68.0, size.width),
+                                                    50.0, size.width),
                                             fontWeight: FontWeight.w900,
                                             color: Color(0xffCCD6F6)),
                                         speed: const Duration(milliseconds: 80),
@@ -172,8 +172,8 @@ class _HomePageMobileState extends State<HomePageMobile> {
                                             BorderRadius.circular(4.0),
                                         child: Container(
                                           alignment: Alignment.center,
-                                          height: size.height * 0.09,
-                                          width: size.width * 0.25,
+                                          height: size.height * 0.08,
+                                          // width: size.width * 0.25,
                                           decoration: BoxDecoration(
                                             border: Border.all(
                                               color: Color(0xff64FFDA),
@@ -182,7 +182,7 @@ class _HomePageMobileState extends State<HomePageMobile> {
                                                 BorderRadius.circular(4.0),
                                           ),
                                           child: Text(
-                                            "Get In Touch",
+                                            " Get In Touch ",
                                             style: TextStyle(
                                               color: Color(0xff64FFDA),
                                               letterSpacing: 2.75,
@@ -205,8 +205,8 @@ class _HomePageMobileState extends State<HomePageMobile> {
                                             BorderRadius.circular(4.0),
                                         child: Container(
                                           alignment: Alignment.center,
-                                          height: size.height * 0.09,
-                                          width: size.width * 0.25,
+                                          height: size.height * 0.08,
+                                          // width: size.width * 0.25,
                                           decoration: BoxDecoration(
                                             border: Border.all(
                                               color: Color(0xff64FFDA),
@@ -215,7 +215,7 @@ class _HomePageMobileState extends State<HomePageMobile> {
                                                 BorderRadius.circular(4.0),
                                           ),
                                           child: Text(
-                                            "Resume",
+                                            "  Resume  ",
                                             style: TextStyle(
                                               color: Color(0xff64FFDA),
                                               letterSpacing: 2.75,
