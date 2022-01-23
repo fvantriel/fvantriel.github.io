@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_resume_website/Widget/CustomText.dart';
 
 class MainTitle extends StatelessWidget {
-  final String number, text;
+  final String? number, text;
   MainTitle({this.number, this.text});
   @override
   Widget build(BuildContext context) {

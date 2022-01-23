@@ -5,8 +5,8 @@ import 'package:flutter_resume_website/UI/FeatureProject.dart';
 
 class Education extends StatelessWidget {
   const Education({
-    Key key,
-    @required this.size,
+    Key? key,
+    required this.size,
   }) : super(key: key);
 
   final Size size;

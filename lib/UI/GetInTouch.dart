@@ -5,9 +5,9 @@ import 'package:flutter_resume_website/Data/Contents.dart';
 
 class GetInTouch extends StatelessWidget {
   const GetInTouch({
-    Key key,
-    @required this.size,
-    @required this.method,
+    Key? key,
+    required this.size,
+    required this.method,
   }) : super(key: key);
 
   final Size size;

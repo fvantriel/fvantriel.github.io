@@ -4,13 +4,13 @@ import 'package:flutter_resume_website/Widget/CustomText.dart';
 import 'package:flutter_resume_website/Model/Method.dart';
 
 class FeatureProject extends StatelessWidget {
-  final String imagePath;
-  final String projectTitle;
-  final String projectDesc;
-  final String tech1;
-  final String tech2;
-  final String tech3;
-  final String linkURL;
+  final String? imagePath;
+  final String? projectTitle;
+  final String? projectDesc;
+  final String? tech1;
+  final String? tech2;
+  final String? tech3;
+  final String? linkURL;
 
   FeatureProject(
       {this.imagePath,
@@ -46,7 +46,7 @@ class FeatureProject extends StatelessWidget {
                     //color: Colors.redAccent,
                     child: Image(
                       fit: BoxFit.contain,
-                      image: AssetImage(imagePath),
+                      image: AssetImage(imagePath!),
                     ),
                   ),
                 ),
@@ -156,7 +156,7 @@ class FeatureProject extends StatelessWidget {
                           icon: FaIcon(FontAwesomeIcons.github),
                           color: Colors.white.withOpacity(0.3),
                           onPressed: () {
-                            method.launchURL(linkURL);
+                            method.launchURL(linkURL!);
                           },
                         ),
                       ],

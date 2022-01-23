@@ -3,8 +3,8 @@ import 'package:flutter_resume_website/Widget/MainTitle.dart';
 
 class Patents extends StatelessWidget {
   const Patents({
-    Key key,
-    @required this.size,
+    Key? key,
+    required this.size,
   }) : super(key: key);
 
   final Size size;
