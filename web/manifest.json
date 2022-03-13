@@ -1,21 +1,21 @@
 {
-    "name": "potrtfolio",
-    "short_name": "potrtfolio",
+    "name": "Florian van Triel",
+    "short_name": "Florian van Triel",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Intro Website of Florian van Triel.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
         {
-            "src": "icons/Icon-192.png",
+            "src": "icons/white-24dp/1x/outline_code_white_24dp.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "icons/Icon-512.png",
+            "src": "icons/white-48dp/2x/outline_code_white_48dp.png",
             "sizes": "512x512",
             "type": "image/png"
         }

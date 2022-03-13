@@ -36,13 +36,13 @@ class About extends StatelessWidget {
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              CustomText(
-                text: "01.",
-                textsize: 20.0,
-                color: Color(0xff61F9D5),
-                fontWeight: FontWeight.w700,
-              ),
-              SizedBox(width: 12.0),
+              // CustomText(
+              //   text: "01.",
+              //   textsize: 20.0,
+              //   color: Color(0xff61F9D5),
+              //   fontWeight: FontWeight.w700,
+              // ),
+              // SizedBox(width: 12.0),
               CustomText(
                 text: "About Me",
                 textsize: 26,
@@ -111,8 +111,7 @@ class About extends StatelessWidget {
                               children: [
                                 technology(context, "Flutter / Dart"),
                                 technology(context, "Python"),
-                                technology(context, "Solidity / Web3.js"),
-                                technology(context, "Typescript"),
+                                technology(context, "Git / SVN"),
                               ],
                             ),
                           ),
@@ -123,7 +122,6 @@ class About extends StatelessWidget {
                               children: [
                                 technology(context, "AWS / GCP"),
                                 technology(context, "C++"),
-                                technology(context, "Git / SVN"),
                                 technology(context, "JIRA / Confluence"),
                               ],
                             ),
