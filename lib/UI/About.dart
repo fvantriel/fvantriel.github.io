@@ -112,6 +112,7 @@ class About extends StatelessWidget {
                                 technology(context, "Flutter / Dart"),
                                 technology(context, "Python"),
                                 technology(context, "Git / SVN"),
+                                technology(context, "HTML / CSS"),
                               ],
                             ),
                           ),
@@ -123,6 +124,7 @@ class About extends StatelessWidget {
                                 technology(context, "AWS / GCP"),
                                 technology(context, "C++"),
                                 technology(context, "JIRA / Confluence"),
+                                technology(context, "Javascript / Node.js"),
                               ],
                             ),
                           )
@@ -162,7 +164,7 @@ class About extends StatelessWidget {
                         color: Colors.black54,
                         child: Image(
                           fit: BoxFit.cover,
-                          image: AssetImage("assets/images/fvan.jpeg"),
+                          image: AssetImage("assets/images/IMG_4691.png"),
                         ),
                       ),
                     ),

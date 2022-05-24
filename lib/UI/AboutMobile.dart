@@ -62,7 +62,7 @@ class AboutMobile extends StatelessWidget {
           height: size.height / 4,
           width: size.width / 4,
           child: CircleAvatar(
-            backgroundImage: AssetImage("assets/images/fvan.jpeg"),
+            backgroundImage: AssetImage("assets/images/IMG_4691.png"),
           ),
         ),
         SizedBox(height: size.height * 0.01),
@@ -97,8 +97,8 @@ class AboutMobile extends StatelessWidget {
           children: [
             technology(context, "Flutter / Dart"),
             technology(context, "Python"),
-            technology(context, "Solidity / Web3.js"),
-            technology(context, "Typescript"),
+            technology(context, "Javascript / Node.js"),
+            technology(context, "HTML / CSS"),
             technology(context, "AWS / GCP"),
             technology(context, "C++"),
             technology(context, "Git / SVN"),
