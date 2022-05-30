@@ -98,13 +98,15 @@ class _HomePageMobileState extends State<HomePageMobile> {
                                     animatedTexts: [
                                       TypewriterAnimatedText(
                                         kName + ".",
+                                        curve: Curves.decelerate,
                                         textStyle: TextStyle(
                                             fontSize: method
                                                 .adaptFontSizeToScreenSize(
                                                     50.0, size.width),
                                             fontWeight: FontWeight.w900,
                                             color: Color(0xffCCD6F6)),
-                                        speed: const Duration(milliseconds: 80),
+                                        speed:
+                                            const Duration(milliseconds: 100),
                                       ),
                                     ],
                                     totalRepeatCount: 1,
