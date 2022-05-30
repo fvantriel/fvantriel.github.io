@@ -3,13 +3,9 @@ import 'package:flutter_resume_website/Data/StyleConstants.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:flutter_resume_website/Model/Method.dart';
 import 'package:flutter_resume_website/UI/About.dart';
-import 'package:flutter_resume_website/UI/Work.dart';
 import 'package:flutter_resume_website/Widget/CustomText.dart';
 import 'package:flutter_resume_website/Data/Contents.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
-import 'package:flutter_resume_website/UI/Education.dart';
-import 'package:flutter_resume_website/UI/Patents.dart';
-import 'package:flutter_resume_website/UI/GetInTouch.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -96,13 +92,14 @@ class _HomePageState extends State<HomePage> {
                                   animatedTexts: [
                                     TypewriterAnimatedText(
                                       kName + ".",
+                                      curve: Curves.decelerate,
                                       textStyle: TextStyle(
                                           fontSize:
                                               method.adaptFontSizeToScreenSize(
                                                   68.0, size.width),
                                           fontWeight: FontWeight.w900,
                                           color: Color(0xffCCD6F6)),
-                                      speed: const Duration(milliseconds: 80),
+                                      speed: const Duration(milliseconds: 100),
                                     ),
                                   ],
                                   totalRepeatCount: 1,
