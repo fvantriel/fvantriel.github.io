@@ -12,18 +12,18 @@ read commitMessage
 echo $commitMessage
 
 git commit -m '$commitMessage'
-#
-#git push origin
-#
-#echo "Now that your codebase is updated, let's push the changes to your website!"
-#
-#flutter pub global activate peanut
-#
-#flutter pub global run peanut
-#
-#git push origin --set-upstream gh-pages
-#
-#echo ""
-#echo ""
-#echo "Done, all changes should be up to date in the next minutes."
-#
+
+git push origin
+
+echo "Now that your codebase is updated, let's push the changes to your website!"
+
+flutter pub global activate peanut
+
+flutter pub global run peanut
+
+git push origin --set-upstream gh-pages
+
+echo ""
+echo ""
+echo "Done, all changes should be up to date in the next minutes."
+
