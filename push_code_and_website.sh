@@ -9,9 +9,7 @@ git add .
 echo "Please enter commit message"
 read commitMessage
 
-echo $commitMessage
-
-git commit -m '$commitMessage'
+git commit -m "$commitMessage"
 
 git push origin
 
